@@ -226,7 +226,7 @@ src/
 
 1. Clone the repository.
 2. Install dependencies using `npm install`.
-3. Run the app using `npm start`.
+3. Run the app using `npm run dev`.
 4. Use the UI to create, update, and delete tasks. Changes are saved locally using IndexedDB.
 
 ## Future Enhancements
