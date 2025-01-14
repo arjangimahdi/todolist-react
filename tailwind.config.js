@@ -12,4 +12,5 @@ module.exports = {
         extend: {},
     },
     plugins: [],
+    safelist: ["bg-red-700", "bg-blue-700", "bg-green-700"],
 };
