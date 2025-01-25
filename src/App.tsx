@@ -1,10 +1,22 @@
+import { Grid, GridItem, Show } from "@chakra-ui/react";
+import { Navbar } from "./components/Navbar";
+
 function App() {
     return (
-        <div className="">
-            <div className="flex justify-center items-center bg-gray-100 h-screen">
-                <h1 className="text-gray-800 text-4xl font-bold">Video Game Overview - Home</h1>
-            </div>
-        </div>
+        <Grid
+            templateAreas={{
+                base: `"nav" "main"`,
+                lg: `"nav nav" "aside main"`,
+            }}
+        >
+            <GridItem area={"nav"}>
+                <Navbar />
+            </GridItem>
+            <Show above="lg">
+                <GridItem area={"aside"}>{/* Aside */}</GridItem>
+            </Show>
+            <GridItem area={"main"}>{/* Main */}</GridItem>
+        </Grid>
     );
 }
 export default App;
