@@ -1,4 +1,8 @@
+
+
 export const getCroppedImageUrl = (url: string): string => {
+  if (!url) return 'https://placehold.co/600x400'
+
   const target = 'media/'
   const index = url.indexOf(target) + target.length
 
