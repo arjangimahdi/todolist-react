@@ -1,9 +1,11 @@
+import { TodoForm } from "./components/TodoForm";
+import { TodoList } from "./components/TodoList";
+
 function App() {
     return (
-        <div className="">
-            <div className="flex justify-center items-center bg-gray-100 h-screen">
-                <h1 className="text-gray-800 text-4xl font-bold">Video Game Overview - Home</h1>
-            </div>
+        <div className="p-4 flex flex-col gap-y-4 bg-slate-950">
+            <TodoForm />
+            <TodoList />
         </div>
     );
 }
