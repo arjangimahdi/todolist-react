@@ -1,0 +1,14 @@
+version: 1
+rules:
+  - id: react-best-practices
+    description: Enforce React coding best practices
+    triggers: [pull_request]
+    checks:
+      - Ensure functional components are preferred over class components.
+      - Verify that list rendering uses unique `key` props.
+      - Warn if inline functions are used inside JSX without memoization.
+      - Check correct usage of React hooks (`useEffect`, `useMemo`, `useCallback`).
+      - Flag unnecessary re-renders (missing dependency arrays in `useEffect`).
+      - Discourage direct DOM manipulation (prefer `useRef`).
+      - Encourage code splitting with `React.lazy` and `Suspense`.
+      - Prefer React.Fragment over extra wrapper divs.
